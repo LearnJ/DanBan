@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/navigate"
+        android:title="首页"
+        android:icon="@drawable/icon"
+        app:showAsAction="always"/>
+
+
+    <item android:title="搜索"
+        android:id="@+id/search"
+        android:icon="@drawable/icon"/>
+
+    <item app:showAsAction="never"
+        android:id="@+id/menu_tab1"
+        android:icon="@drawable/icon"
+        android:title="tab1"/>
+
+    <item app:showAsAction="never"
+        android:id="@+id/menu_tab2"
+        android:icon="@drawable/icon"
+        android:title="tab2"/>
+
+
+
+</menu>

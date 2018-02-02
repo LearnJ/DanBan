@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jxm.daiban.activity.EnterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/start_logo_img"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_logo_count"
+        android:layout_gravity="right"
+        android:textSize="@dimen/textsize_small"
+        android:textColor="@color/textcolor_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="倒计时"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/start_logo_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/start_logo_title"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textsize_big"
+            android:textColor="@color/textcolor_2"
+            android:text="@string/start_logo_title"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

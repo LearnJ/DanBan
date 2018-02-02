@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/icon"
+            android:title="call"/>
+
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/icon"
+            android:title="friends"/>
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/icon"
+            android:title="location"/>
+
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/icon"
+            android:title="tasks"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/nav_call1"
+            android:icon="@drawable/icon"
+            android:title="call"/>
+
+        <item
+            android:id="@+id/nav_friends1"
+            android:icon="@drawable/icon"
+            android:title="friends"/>
+
+        <item
+            android:id="@+id/nav_location1"
+            android:icon="@drawable/icon"
+            android:title="location"/>
+
+        <item
+            android:id="@+id/nav_task1"
+            android:icon="@drawable/icon"
+            android:title="tasks"/>
+
+    </group>
+</menu>

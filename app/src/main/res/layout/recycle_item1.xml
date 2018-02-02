@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#665544"
+    >
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon"
+            android:id="@+id/preview_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/textcolor_1"
+            android:textSize="@dimen/textsize_small"
+            android:layout_gravity="right|top"
+            android:id="@+id/topright_tv"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon"
+            android:id="@+id/item_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="开始你的表演"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:id="@+id/item_title"
+            android:textSize="@dimen/textsize_small"
+           />
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
