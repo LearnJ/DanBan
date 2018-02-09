@@ -103,7 +103,10 @@ public class GlideActivity extends AppCompatActivity {
                 System.out.println("jm---onclick");
                 Log.d("glide", "onClick: ");
                 Glide.with(GlideActivity.this)
-                        .load("http://img.my.csdn.net/uploads/201508/05/1438760757_3588.jpg")
+                      //  .load("http://img.my.csdn.net/uploads/201508/05/1438760757_3588.jpg")
+                        .load("")
+                        .placeholder(R.drawable.img1)
+                        .fallback(R.drawable.img2)
                         .into(imageView);
 
             }

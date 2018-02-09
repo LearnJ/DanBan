@@ -5,17 +5,24 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.example.jxm.daiban.R;
 
 public class PlayActivity extends AppCompatActivity {
 
 
+    private ViewFlipper viewFlipper;
+    private TextView userName;
     private WebView webView;
     private final String TAG="PlayActivity";
     @Override
@@ -24,10 +31,25 @@ public class PlayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_play);
 
         webView=findViewById(R.id.webView);
+        viewFlipper=findViewById(R.id.flipper);
+        userName=findViewById(R.id.play_user_name);
+        ImageView img1=new ImageView(this);
+        img1.setBackgroundResource(R.drawable.ic_launcher_background);
+        viewFlipper.addView(img1);
+        ImageView img2=new ImageView(this);
+        img1.setBackgroundResource(R.drawable.icon);
+        viewFlipper.addView(img2);
 
+        viewFlipper.startFlipping();
         Intent intent=getIntent();
         String url=intent.getStringExtra("play_addr");
         loadWeb(url);
+        userName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(PlayActivity.this,"本视频由李四上传",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     void loadWeb(String url){
