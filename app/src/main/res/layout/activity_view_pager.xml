@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-
     tools:context="com.example.jxm.daiban.activity.ViewPagerActivity">
 
     <android.support.v4.view.ViewPager
@@ -15,7 +14,6 @@
         android:layout_marginTop="10dp"
         android:paddingLeft="80dp"
         android:paddingRight="80dp"
-
         android:clipToPadding="false"
         android:id="@+id/viewpager">
 
@@ -23,3 +21,6 @@
 
 
 </LinearLayout>
+    <!--android:clipToPadding="false"-->
+    <!--android:clipChildren="false"两种方式实现ViewPager同时显示多页的区别：clipToPadding
+    显示多页是可以响应点击的，而设置clipChildren属性不可以-->
